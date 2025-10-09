@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
+    "images:optimize": "node tools/optimize_images.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,6 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "sharp": "^0.32.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "autoprefixer": "^10.4.14",
