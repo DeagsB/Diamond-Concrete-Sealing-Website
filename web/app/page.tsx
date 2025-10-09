@@ -6,18 +6,18 @@ import ContactForm from '../components/ContactForm'
 export default function Home() {
   return (
     <div>
-      <section className="hero">
+      <section className="hero concrete-surface">
         <div className="container hero-grid">
           <div>
-            <h1 className="text-4xl font-extrabold">Seal it once. Shine for years.</h1>
-            <p className="muted mt-4">Professional concrete cleaning, prep, and premium industrial‑grade sealer sealing (25–30% solids). Long‑lasting results.</p>
+            <h1 className="hero-lead">We prep. We seal. Your concrete lasts.</h1>
+            <p className="hero-sub">Professional surface cleaning, trusted industrial sealers, and clean workmanship tailored for residential and light commercial projects.</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a className="btn btn-primary" href="#contact">Request Quote</a>
+              <a className="cta-large" href="#contact">Request a fast quote</a>
               <a className="btn" href="tel:+15878306736">Call 587‑830‑6736</a>
             </div>
           </div>
 
-          <div className="hero-card">
+          <div className="hero-card" aria-hidden>
             <Image alt="Sealed driveway" src="/images/image_1.jpg" width={840} height={560} className="rounded-md" priority blurDataURL={placeholders['image_1']} placeholder={placeholders['image_1'] ? 'blur' : undefined} />
           </div>
         </div>

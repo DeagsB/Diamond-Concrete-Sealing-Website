@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --ink: #0f172a;
+  --ink: #0b1220; /* dark slate */
   --muted: #6b7280;
-  --brand: #0f172a; /* deep navy */
-  --accent: #f59e0b; /* warm amber */
-  --bg: #ffffff;
-  --card: #f8fafc;
-  --radius: 12px;
+  --cement: #9aa3ad; /* light concrete */
+  --slate: #4b5563;
+  --accent: #f59e0b; /* amber accent */
+  --bg: #f6f7f9;
+  --card: #f2f4f6;
+  --radius: 10px;
 }
 
 /* typography helpers */
@@ -51,6 +52,25 @@
 
 /* Basic layout helpers */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+/* site branding */
+.site-header { background: rgba(255,255,255,0.75); backdrop-filter: blur(6px); }
+.logo { font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+.logo small { display:block; font-weight:600; color:var(--slate); font-size:0.85rem }
+
+/* concrete texture hint */
+.concrete-surface { background: linear-gradient(180deg, rgba(0,0,0,0.02), transparent), repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 6px); }
+
+/* hero */
+.hero { padding: 64px 0; }
+.hero-lead { font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.02; color: var(--ink); }
+.hero-sub { color: var(--slate); margin-top: 0.6rem }
+.cta-large { background: var(--ink); color: white; padding: 12px 18px; border-radius: 10px; font-weight: 700 }
+
+/* cards look like concrete slabs */
+.card { background: linear-gradient(180deg, #fff, #f6f7f9); border: 1px solid rgba(11,17,32,0.06); border-radius: var(--radius); padding: 18px; box-shadow: 0 6px 18px rgba(11,17,32,0.04); }
+
+.section-pad { padding-top: 48px; padding-bottom: 48px }
 
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; font-weight: 700; border: 1px solid rgba(226,232,240,0.6); background: transparent; color: var(--ink); text-decoration: none; }
 .btn-primary { background: var(--brand); color: white; border-color: transparent; }
