@@ -7,9 +7,9 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <h1>Seal it once. Shine for years.</h1>
-            <p className="muted">Professional concrete cleaning, prep, and premium industrial‑grade sealer sealing (25–30% solids). Long‑lasting results.</p>
-            <div style={{ marginTop: 18, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <h1 className="text-4xl font-extrabold">Seal it once. Shine for years.</h1>
+            <p className="muted mt-4">Professional concrete cleaning, prep, and premium industrial‑grade sealer sealing (25–30% solids). Long‑lasting results.</p>
+            <div className="mt-6 flex flex-wrap gap-3">
               <a className="btn btn-primary" href="#contact">Request Quote</a>
               <a className="btn" href="tel:+15878306736">Call 587‑830‑6736</a>
             </div>
@@ -21,19 +21,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="why">
+      <section id="why" className="py-12">
         <div className="container">
-          <div className="grid cols-3">
+          <div className="grid cols-3 gap-6">
             <div className="card">
-              <h3>Prep that bonds</h3>
+              <h3 className="text-lg font-semibold">Prep that bonds</h3>
               <p className="muted">Controlled mild acid wash opens the surface so sealer grips and won’t peel.</p>
             </div>
             <div className="card">
-              <h3>Premium industrial‑grade sealer</h3>
+              <h3 className="text-lg font-semibold">Premium industrial‑grade sealer</h3>
               <p className="muted">25–30% solids penetrate to repel water, oils, and de‑icing salts.</p>
             </div>
             <div className="card">
-              <h3>Professional application</h3>
+              <h3 className="text-lg font-semibold">Professional application</h3>
               <p className="muted">Measured coverage + ideal timing deliver a uniform sheen and long, even wear.</p>
             </div>
           </div>
@@ -56,22 +56,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services">
+      <section id="services" className="py-12">
         <div className="container">
-          <h2>Our Services</h2>
+          <h2 className="text-2xl font-bold">Our Services</h2>
           <p className="muted">Available with professional, industrial‑grade sealer options in Semi‑gloss or High‑gloss finishes.</p>
-          <div style={{ background: 'var(--ink)', color: '#e2e8f0', padding: 18, borderRadius: 14, margin: '14px 0' }}>Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</div>
-          <div className="grid cols-3">
+          <div className="bg-ink text-e2e8f0 p-4 rounded-lg my-4">Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</div>
+          <div className="grid cols-3 gap-6">
             <div className="card">
-              <h3>Driveways &amp; Walkways</h3>
+              <h3 className="text-lg font-semibold">Driveways &amp; Walkways</h3>
               <p className="muted">Safe preparation and a durable finish for residential surfaces.</p>
             </div>
             <div className="card">
-              <h3>Residential Steps &amp; Patios</h3>
+              <h3 className="text-lg font-semibold">Residential Steps &amp; Patios</h3>
               <p className="muted">Non‑slip considerations and clean detailed edges for a finished look.</p>
             </div>
             <div className="card">
-              <h3>Small Commercial Pads</h3>
+              <h3 className="text-lg font-semibold">Small Commercial Pads</h3>
               <p className="muted">Scaled application and coverage calculations for light commercial work.</p>
             </div>
           </div>
@@ -105,10 +105,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="gallery">
+      <section id="gallery" className="py-12">
         <div className="container">
-          <h2>Gallery</h2>
-          <div className="gallery" style={{ marginTop: 12 }}>
+          <h2 className="text-2xl font-bold">Gallery</h2>
+          <div className="gallery mt-4">
             <div className="g1"><img alt="Sealed driveway" src="/images/image_2.jpg" /></div>
             <div className="g2"><img alt="Sealed surface" src="/images/image_3.jpg" /></div>
             <div className="g3"><img alt="Application detail" src="/images/image_4.jpg" /></div>
