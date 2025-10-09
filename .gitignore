@@ -1,0 +1,21 @@
+# Node / Next
+node_modules/
+web/node_modules/
+web/.next/
+web/package-lock.json
+
+# Vercel / build
+.vercel/
+dist/
+build/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Editor
+.vscode/
