@@ -58,6 +58,9 @@
 
 .card { background: var(--card); border: 1px solid rgba(229,231,235,0.8); border-radius: var(--radius); padding: 18px; }
 
+.input { width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid #e6edf5; background: white; }
+.input:focus { outline: none; box-shadow: 0 0 0 4px rgba(59,130,246,0.08); border-color: #bfdbfe }
+
 .hero { padding: 56px 0; background: linear-gradient(180deg, rgba(240,246,255,0.6), transparent); }
 .hero-grid { display: grid; grid-template-columns: 1fr 420px; gap: 28px; align-items: center; }
 .hero-card { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: 0 8px 30px rgba(2,6,23,0.08); max-width: 420px; }

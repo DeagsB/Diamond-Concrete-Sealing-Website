@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import ContactForm from '../components/ContactForm'
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           </div>
 
           <div className="hero-card">
-            <img alt="Sealed driveway" src="/images/image_1.jpg" />
+            <Image alt="Sealed driveway" src="/images/image_1.jpg" width={840} height={560} className="rounded-md" priority />
           </div>
         </div>
       </section>
@@ -109,12 +110,12 @@ export default function Home() {
         <div className="container">
           <h2 className="text-2xl font-bold">Gallery</h2>
           <div className="gallery mt-4">
-            <div className="g1"><img alt="Sealed driveway" src="/images/image_2.jpg" /></div>
-            <div className="g2"><img alt="Sealed surface" src="/images/image_3.jpg" /></div>
-            <div className="g3"><img alt="Application detail" src="/images/image_4.jpg" /></div>
-            <div className="g4"><img alt="Clean prep" src="/images/image_5.jpg" /></div>
-            <div className="g5"><img alt="Finished sheen" src="/images/image_6.jpg" /></div>
-            <div className="g6"><img alt="Before and after" src="/images/image_7.jpg" /></div>
+            <div className="g1"><Image alt="Sealed driveway" src="/images/image_2.jpg" width={800} height={600} priority className="rounded-md" /></div>
+            <div className="g2"><Image alt="Sealed surface" src="/images/image_3.jpg" width={400} height={300} className="rounded-md" /></div>
+            <div className="g3"><Image alt="Application detail" src="/images/image_4.jpg" width={400} height={300} className="rounded-md" /></div>
+            <div className="g4"><Image alt="Clean prep" src="/images/image_5.jpg" width={400} height={300} className="rounded-md" /></div>
+            <div className="g5"><Image alt="Finished sheen" src="/images/image_6.jpg" width={400} height={300} className="rounded-md" /></div>
+            <div className="g6"><Image alt="Before and after" src="/images/image_7.jpg" width={400} height={300} className="rounded-md" /></div>
           </div>
         </div>
       </section>

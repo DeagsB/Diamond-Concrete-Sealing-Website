@@ -33,17 +33,17 @@ export default function ContactForm() {
   return (
     <div>
       <form onSubmit={handleSubmit} className="grid gap-3" aria-live="polite">
-        <label className="sr-only" htmlFor="name">Name</label>
-        <input id="name" name="name" placeholder="Your name" className="p-3 border rounded" required />
+  <label className="sr-only" htmlFor="name">Name</label>
+  <input id="name" name="name" placeholder="Your name" className="input" required />
 
-        <label className="sr-only" htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" className="p-3 border rounded" required />
+  <label className="sr-only" htmlFor="email">Email</label>
+  <input id="email" name="email" type="email" placeholder="you@example.com" className="input" required />
 
-        <label className="sr-only" htmlFor="phone">Phone</label>
-        <input id="phone" name="phone" placeholder="Phone" className="p-3 border rounded" />
+  <label className="sr-only" htmlFor="phone">Phone</label>
+  <input id="phone" name="phone" placeholder="Phone" className="input" />
 
-        <label className="sr-only" htmlFor="details">Details</label>
-        <textarea id="details" name="details" placeholder="Job details: size, location, preferred timing" className="p-3 border rounded" rows={5}></textarea>
+  <label className="sr-only" htmlFor="details">Details</label>
+  <textarea id="details" name="details" placeholder="Job details: size, location, preferred timing" className="input" rows={5}></textarea>
 
         <div style={{ display: 'flex', gap: 10 }}>
           <button type="submit" className="btn btn-primary">Request my quote</button>
