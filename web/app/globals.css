@@ -10,6 +10,59 @@
 .text-ink { color: var(--color-ink); }
 .text-muted { color: var(--color-muted); }
 
+/* Accessibility & focus styles */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: var(--color-ink);
+  color: white;
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid #fbbf24; /* amber-400 */
+  outline-offset: 3px;
+}
+
+/* Reduce motion for users who prefer less movement */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* Screen-reader only helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Improve button focus visible for keyboard users */
+.btn:focus-visible {
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+}
+
 :root{
   --ink:#0f172a;
 }
