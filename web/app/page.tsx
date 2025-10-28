@@ -292,7 +292,7 @@ export default function Home() {
                   <div className="info-card">
                     <h3>Why Choose Diamond?</h3>
                     <ul className="info-list">
-                      <li>🚗 Free estimates within 24 hours</li>
+                      <li>✅ Free estimates within 24 hours</li>
                       <li>⏱️ Same-day or next-day service available</li>
                       <li>🛡️ Full workmanship warranty included</li>
                       <li>💰 Competitive pricing, no hidden fees</li>
