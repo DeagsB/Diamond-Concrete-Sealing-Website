@@ -259,6 +259,7 @@ body {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  filter: grayscale(100%);
 }
 
 .logo-text {
