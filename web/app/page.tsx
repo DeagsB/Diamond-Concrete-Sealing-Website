@@ -133,58 +133,71 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="services-section">
-        <ScrollReveal>
-          <div className="container">
-            <div className="section-header">
-              <h2>Our Services</h2>
-              <p>Professional concrete sealing for residential and commercial projects</p>
+      <section id="services" className="services-section-new">
+        <div className="container">
+          <h2>Our Services</h2>
+          <p>Available with professional, industrial-grade sealer options in Semi-gloss or High-gloss finishes.</p>
+          
+          <div className="services-cta-banner">
+            <p>Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</p>
+          </div>
+          
+          <div className="services-grid-new">
+            <div className="service-card-new">
+              <div className="service-icon">➕</div>
+              <h3>Exposed Aggregate Sealing</h3>
+              <p>Deep protection that highlights the natural stone while resisting water and salts.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">📐</div>
+              <h3>Stamped Concrete Sealing</h3>
+              <p>Enhances colour and pattern; optional high-gloss for a showpiece finish.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">🧹</div>
+              <h3>Broom Concrete Sealing</h3>
+              <p>Clean, uniform look with tuned slip-resistance for walkways and steps.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">🛣️</div>
+              <h3>Asphalt Sealing</h3>
+              <p>Protects and refreshes asphalt drives and small lots.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">💧</div>
+              <h3>Pressure Washing & Stain Removal</h3>
+              <p>Degreasing and surface cleaning to prep properly and restore appearance.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">🎨</div>
+              <h3>Concrete Staining & Crack Repair</h3>
+              <p>Colour options and discreet repairs for a seamless finish.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">🔒</div>
+              <h3>Anti-Slip Additives</h3>
+              <p>Traction options for steps and high-traffic areas.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">⚗️</div>
+              <h3>Acid Washing</h3>
+              <p>Controlled etch to open pores and remove mineral deposits as needed.</p>
+            </div>
+            
+            <div className="service-card-new">
+              <div className="service-icon">🔧</div>
+              <h3>Asphalt Repairs</h3>
+              <p>Small patch and edge repairs to clean up problem areas.</p>
             </div>
           </div>
-        </ScrollReveal>
-        <ScrollReveal delay={100}>
-          <div className="container">
-            <div className="services-grid">
-              <div className="service-card stagger-item">
-                <div className="service-image">
-                  <Image alt="Driveway sealing" src="/images/image_2.jpg" width={400} height={250} className="service-img" blurDataURL={placeholders['image_2']} placeholder={placeholders['image_2'] ? 'blur' : undefined} />
-                </div>
-                <div className="service-content">
-                  <h3>Driveways & Walkways</h3>
-                  <p>Safe preparation and durable finish for residential surfaces that withstands harsh weather.</p>
-                  <a className="btn-small" href="#contact">Get Quote</a>
-                </div>
-              </div>
-              <div className="service-card stagger-item">
-                <div className="service-image">
-                  <Image alt="Patio sealing" src="/images/image_10.jpg" width={400} height={250} className="service-img" blurDataURL={placeholders['image_10']} placeholder={placeholders['image_10'] ? 'blur' : undefined} />
-                </div>
-                <div className="service-content">
-                  <h3>Patios & Steps</h3>
-                  <p>Non‑slip considerations and clean detailed edges for a finished, professional look.</p>
-                  <a className="btn-small" href="#contact">Get Quote</a>
-                </div>
-              </div>
-              <div className="service-card stagger-item">
-                <div className="service-image">
-                  <Image alt="Commercial sealing" src="/images/image_13.jpg" width={400} height={250} className="service-img" blurDataURL={placeholders['image_13']} placeholder={placeholders['image_13'] ? 'blur' : undefined} />
-                </div>
-                <div className="service-content">
-                  <h3>Commercial Pads</h3>
-                  <p>Scaled application and coverage calculations for light commercial and industrial work.</p>
-                  <a className="btn-small" href="#contact">Get Quote</a>
-                </div>
-              </div>
-            </div>
-            <div className="cta-banner">
-              <div className="cta-banner-content">
-                <h3>Ready to Protect Your Concrete?</h3>
-                <p>Get a free quote today and see why 500+ clients trust Diamond Concrete Sealing</p>
-                <a className="btn-primary" href="#contact">Request Free Quote</a>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
+        </div>
       </section>
 
       {/* Gallery Section */}
