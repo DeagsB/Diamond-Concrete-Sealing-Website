@@ -6,8 +6,8 @@ export const metadata = {
   description: 'Professional concrete sealing services in Okotoks & The Foothills. 10+ years of experience. Free quotes. Fully insured. Protect your investment with premium concrete sealing.',
   keywords: 'concrete sealing, Okotoks, Foothills, driveway sealing, patio sealing, concrete protection',
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>",
-    apple: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z' fill='gray' stroke='black' stroke-width='2'/><path d='M50 25 L55 45 L70 50 L55 55 L50 75 L45 55 L30 50 L45 45 Z' fill='lightgray'/></svg>",
+    apple: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z' fill='gray' stroke='black' stroke-width='2'/><path d='M50 25 L55 45 L70 50 L55 55 L50 75 L45 55 L30 50 L45 45 Z' fill='lightgray'/></svg>",
   },
   openGraph: {
     title: 'Diamond Concrete Sealing - Premium Concrete Sealing in Okotoks',
