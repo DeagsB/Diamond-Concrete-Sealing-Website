@@ -134,14 +134,18 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="services-section-new">
-        <div className="container">
-          <h2>Our Services</h2>
-          <p>Available with professional, industrial-grade sealer options in Semi-gloss or High-gloss finishes.</p>
-          
-          <div className="services-cta-banner">
-            <p>Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</p>
+        <ScrollReveal>
+          <div className="container">
+            <h2>Our Services</h2>
+            <p>Available with professional, industrial-grade sealer options in Semi-gloss or High-gloss finishes.</p>
+            
+            <div className="services-cta-banner">
+              <p>Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</p>
+            </div>
           </div>
-          
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <div className="container">
           <div className="services-grid-new">
             <div className="service-card-new">
               <div className="service-icon">➕</div>
@@ -197,7 +201,7 @@ export default function Home() {
               <p>Small patch and edge repairs to clean up problem areas.</p>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </section>
 
       {/* Gallery Section */}
