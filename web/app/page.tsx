@@ -146,59 +146,60 @@ export default function Home() {
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <div className="container">
-          <div className="services-grid-new">
-            <div className="service-card-new">
-              <div className="service-icon">➕</div>
-              <h3>Exposed Aggregate Sealing</h3>
-              <p>Deep protection that highlights the natural stone while resisting water and salts.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">📐</div>
-              <h3>Stamped Concrete Sealing</h3>
-              <p>Enhances colour and pattern; optional high-gloss for a showpiece finish.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">🧹</div>
-              <h3>Broom Concrete Sealing</h3>
-              <p>Clean, uniform look with tuned slip-resistance for walkways and steps.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">🛣️</div>
-              <h3>Asphalt Sealing</h3>
-              <p>Protects and refreshes asphalt drives and small lots.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">💧</div>
-              <h3>Pressure Washing & Stain Removal</h3>
-              <p>Degreasing and surface cleaning to prep properly and restore appearance.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">🎨</div>
-              <h3>Concrete Staining & Crack Repair</h3>
-              <p>Colour options and discreet repairs for a seamless finish.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">🔒</div>
-              <h3>Anti-Slip Additives</h3>
-              <p>Traction options for steps and high-traffic areas.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">⚗️</div>
-              <h3>Acid Washing</h3>
-              <p>Controlled etch to open pores and remove mineral deposits as needed.</p>
-            </div>
-            
-            <div className="service-card-new">
-              <div className="service-icon">🔧</div>
-              <h3>Asphalt Repairs</h3>
-              <p>Small patch and edge repairs to clean up problem areas.</p>
+            <div className="services-grid-new">
+              <div className="service-card-new">
+                <div className="service-icon">➕</div>
+                <h3>Exposed Aggregate Sealing</h3>
+                <p>Deep protection that highlights the natural stone while resisting water and salts.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">📐</div>
+                <h3>Stamped Concrete Sealing</h3>
+                <p>Enhances colour and pattern; optional high-gloss for a showpiece finish.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">🧹</div>
+                <h3>Broom Concrete Sealing</h3>
+                <p>Clean, uniform look with tuned slip-resistance for walkways and steps.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">🛣️</div>
+                <h3>Asphalt Sealing</h3>
+                <p>Protects and refreshes asphalt drives and small lots.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">💧</div>
+                <h3>Pressure Washing & Stain Removal</h3>
+                <p>Degreasing and surface cleaning to prep properly and restore appearance.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">🎨</div>
+                <h3>Concrete Staining & Crack Repair</h3>
+                <p>Colour options and discreet repairs for a seamless finish.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">🔒</div>
+                <h3>Anti-Slip Additives</h3>
+                <p>Traction options for steps and high-traffic areas.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">⚗️</div>
+                <h3>Acid Washing</h3>
+                <p>Controlled etch to open pores and remove mineral deposits as needed.</p>
+              </div>
+              
+              <div className="service-card-new">
+                <div className="service-icon">🔧</div>
+                <h3>Asphalt Repairs</h3>
+                <p>Small patch and edge repairs to clean up problem areas.</p>
+              </div>
             </div>
           </div>
         </ScrollReveal>
