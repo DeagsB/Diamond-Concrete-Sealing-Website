@@ -50,7 +50,7 @@ export default function Counter({ value, duration = 2000, suffix = '' }: Counter
   }
 
   return (
-    <div ref={ref} className="stat-number">
+    <div ref={ref} className="stat-number" style={{ minWidth: '100px', display: 'inline-block' }}>
       {count}{suffix}
     </div>
   )

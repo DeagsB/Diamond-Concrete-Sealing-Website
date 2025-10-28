@@ -588,6 +588,10 @@ body {
   color: var(--primary);
   line-height: 1;
   margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+  min-width: 100px;
+  text-align: right;
+  display: block;
 }
 
 .stat-label {
@@ -1213,6 +1217,20 @@ body {
   .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .stat {
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    min-width: 80px;
   }
 
   .trust-grid {
