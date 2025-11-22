@@ -26,13 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#main" className="skip-link">Skip to main content</a>
         <header className="site-header">
           <div className="header-container">
-            <div className="logo">
-              <div className="logo-icon">💎</div>
-              <div className="logo-text">
-                <span className="logo-name">Diamond Concrete Sealing</span>
-                <span className="logo-tagline">Okotoks & The Foothills</span>
-              </div>
-            </div>
+            <a href="/" className="logo-banner">
+              <span className="banner-text">Diamond Concrete Sealing</span>
+            </a>
             <nav className="nav-menu">
               <a href="#why" className="nav-link">Why Choose Us</a>
               <a href="#services" className="nav-link">Services</a>
@@ -48,9 +44,39 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main id="main">{children}</main>
-        <footer className="site-footer border-t mt-12">
-          <div className="container py-6 text-center">
-            <p className="muted">© {new Date().getFullYear()} Diamond Concrete Sealing. All rights reserved.</p>
+        <footer className="site-footer">
+          <div className="container">
+            <div className="footer-content">
+              <div className="footer-column">
+                <h3>Company</h3>
+                <ul className="footer-links">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div className="footer-column">
+                <h3>Other pages</h3>
+                <ul className="footer-links">
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                </ul>
+              </div>
+              <div className="footer-column">
+                <h3>Services</h3>
+                <ul className="footer-links">
+                  <li><a href="#services">Concrete Sealing</a></li>
+                  <li><a href="#services">Pressure Washing</a></li>
+                  <li><a href="#services">Crack Repair</a></li>
+                </ul>
+              </div>
+              <div className="footer-column footer-cta">
+                <p className="footer-tagline">Unleash the full potential of your concrete surfaces.</p>
+              </div>
+            </div>
+            <div className="footer-bottom">
+              <p>© {new Date().getFullYear()} Diamond Concrete Sealing. All rights reserved.</p>
+            </div>
           </div>
         </footer>
       </body>

@@ -7,6 +7,8 @@ import ScrollReveal from '../components/ScrollReveal'
 import GalleryLightbox from '../components/GalleryLightbox'
 import Counter from '../components/Counter'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import FAQ from '../components/FAQ'
+import Testimonials from '../components/Testimonials'
 
 const galleryImages = [
   { src: '/images/image_2.jpg', alt: 'Sealed driveway', width: 800, height: 600 },
@@ -21,42 +23,24 @@ export default function Home() {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null)
   return (
     <div>
-      {/* Hero Section with Strong CTA */}
+      {/* Hero Section */}
       <section className="hero-section concrete-overlay">
         <div className="hero-gradient"></div>
-        <div className="container hero-content">
-          <div className="hero-text slide-in-left">
-            <div className="badge fade-in">10+ Years of Excellence</div>
-            <h1 className="hero-title">
-              Protect Your Investment with <span className="highlight">Premium Concrete Sealing</span>
+        <div className="container hero-content-new">
+          <div className="hero-text-new">
+            <div className="hero-badge">From 500+ Projects</div>
+            <h1 className="hero-title-new">
+              Crafting durable protection, <span className="highlight">sealing concrete excellence</span>
             </h1>
-            <p className="hero-description">
-              Professional concrete sealing services in Okotoks & the Foothills. We deliver lasting protection against weather, stains, and wear—backed by 10+ years of expertise.
+            <p className="hero-description-new">
+              With our expert team of concrete sealing professionals, we turn ordinary surfaces into extraordinary, long-lasting protected spaces.
             </p>
-            <div className="hero-cta-group">
-              <a className="btn-primary-large" href="#contact">
-                Get Free Quote →
-              </a>
-              <a className="btn-secondary" href="tel:+15878306736">
-                📞 587‑830‑6736
-              </a>
-            </div>
-            <div className="hero-stats">
-              <div className="stat">
-                <Counter value="500" suffix="+" />
-                <div className="stat-label">Projects Completed</div>
-              </div>
-              <div className="stat">
-                <Counter value="10" suffix="+" />
-                <div className="stat-label">Years Experience</div>
-              </div>
-              <div className="stat">
-                <Counter value="98" suffix="%" />
-                <div className="stat-label">Satisfaction Rate</div>
-              </div>
+            <div className="hero-location">
+              <span>Okotoks, Alberta</span>
+              <span>Foothills Area</span>
             </div>
           </div>
-          <div className="hero-image slide-in-right">
+          <div className="hero-image-new">
             <div className="hero-card float">
               <Image 
                 alt="Premium sealed concrete driveway" 
@@ -71,76 +55,80 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        {/* Book a Call Section */}
+        <ScrollReveal>
+          <div className="container">
+            <div className="book-call-section">
+              <h3>Book a call with our experts</h3>
+              <div className="book-call-content">
+                <div className="book-call-info">
+                  <div className="expert-card">
+                    <div className="expert-avatar">DC</div>
+                    <div className="expert-details">
+                      <h4>Diamond Concrete Team</h4>
+                      <p>We take the time to understand your unique needs and preferences to ensure that your concrete sealing project reflects your vision and protects your investment.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="book-call-cta">
+                  <a href="#contact" className="btn-primary-large">Request a Quote</a>
+                  <a href="tel:+15878306736" className="book-call-phone">📞 (587) 830-6736</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
       </section>
 
-      {/* Trust Indicators */}
-      <ScrollReveal>
-        <section className="trust-section">
+      {/* Beliefs Section */}
+      <section id="why" className="beliefs-section concrete-texture">
+        <ScrollReveal>
           <div className="container">
-            <div className="trust-grid">
-              <div className="trust-item stagger-item">
-                <div className="trust-icon">✓</div>
-                <div className="trust-text">Fully Insured</div>
+            <div className="section-header">
+              <h2>We believe in turning your concrete surfaces into protected investments</h2>
+              <p>Whether you have a sprawling driveway or a cozy patio, our team of experienced concrete sealing professionals is dedicated to bringing your protection dreams to life.</p>
+            </div>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <div className="container">
+            <div className="beliefs-grid">
+              <div className="belief-card stagger-item">
+                <h4>Professional-grade sealing practices</h4>
+                <p>We use only industrial-strength sealers with 25-30% solids content for maximum protection and durability.</p>
               </div>
-              <div className="trust-item stagger-item">
-                <div className="trust-icon">✓</div>
-                <div className="trust-text">Free Quotes</div>
+              <div className="belief-card stagger-item">
+                <h4>Personalized service for your needs</h4>
+                <p>Every project is tailored to your specific requirements, ensuring results that exceed expectations.</p>
               </div>
-              <div className="trust-item stagger-item">
-                <div className="trust-icon">✓</div>
-                <div className="trust-text">Warranty Included</div>
-              </div>
-              <div className="trust-item stagger-item">
-                <div className="trust-icon">✓</div>
-                <div className="trust-text">Local Experts</div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      {/* Availability Section */}
+      <ScrollReveal>
+        <section className="availability-section">
+          <div className="container">
+            <div className="availability-content">
+              <h2>Our team is available Monday to Friday</h2>
+              <div className="availability-info">
+                <a href="tel:+15878306736" className="availability-phone">(587) 830-6736</a>
+                <p className="availability-hours">From 9am to 5pm</p>
               </div>
             </div>
           </div>
         </section>
       </ScrollReveal>
 
-      {/* Benefits Section */}
-      <section id="why" className="benefits-section concrete-texture">
-        <ScrollReveal>
-          <div className="container">
-          <div className="section-header">
-            <h2>Why Choose Diamond Concrete Sealing?</h2>
-            <p>Professional-grade sealing that stands the test of time</p>
-          </div>
-          </div>
-        </ScrollReveal>
-        <ScrollReveal delay={100}>
-          <div className="container">
-            <div className="benefits-grid">
-              <div className="benefit-card stagger-item">
-                <div className="benefit-icon">🛡️</div>
-                <h3>Advanced Surface Prep</h3>
-                <p>Controlled mild acid wash opens the surface for maximum sealer adhesion—no peeling, guaranteed.</p>
-              </div>
-              <div className="benefit-card stagger-item">
-                <div className="benefit-icon">🔬</div>
-                <h3>Industrial-Grade Sealers</h3>
-                <p>25–30% solids penetrate deep to repel water, oils, and de‑icing salts. Professional-grade protection.</p>
-              </div>
-              <div className="benefit-card stagger-item">
-                <div className="benefit-icon">✨</div>
-                <h3>Flawless Application</h3>
-                <p>Precise coverage and ideal timing deliver uniform sheen and long-lasting, even wear.</p>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
       {/* Services Section */}
       <section id="services" className="services-section-new concrete-texture">
         <ScrollReveal>
           <div className="container">
-            <h2>Our Services</h2>
-            <p>Available with professional, industrial-grade sealer options in Semi-gloss or High-gloss finishes.</p>
-            
-            <div className="services-cta-banner">
-              <p>Quality Products, Guaranteed Results — Tough as Concrete. Sharp as a Diamond.</p>
+            <div className="section-header">
+              <h2>Our services</h2>
+              <p>Our team combines expertise with creativity to transform concrete surfaces into protected, beautiful spaces that enhance the value of any property.</p>
             </div>
           </div>
         </ScrollReveal>
@@ -205,13 +193,13 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      {/* Gallery Section */}
+      {/* Gallery Section - Our Recent Works */}
       <section id="gallery" className="gallery-section concrete-texture">
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>Our Work</h2>
-              <p>See the quality that sets us apart</p>
+              <h2>Our recent works</h2>
+              <p>We take a personalized approach to every project, ensuring that each concrete sealing job we complete is a reflection of our client's unique vision and protection needs.</p>
             </div>
           </div>
         </ScrollReveal>
@@ -230,6 +218,26 @@ export default function Home() {
           </div>
         </ScrollReveal>
       </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section concrete-texture">
+        <ScrollReveal>
+          <div className="container">
+            <div className="section-header">
+              <h2>Trusted by 500+ customers</h2>
+              <div className="testimonials-rating">
+                <div className="rating-score">4.9</div>
+                <p className="rating-text">From 500+ ratings</p>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <div className="container">
+            <Testimonials />
+          </div>
+        </ScrollReveal>
+      </section>
       
       {selectedImageIndex !== null && (
         <GalleryLightbox 
@@ -239,38 +247,37 @@ export default function Home() {
         />
       )}
 
-      {/* About Section */}
-      <section id="about" className="about-section concrete-texture">
+      {/* FAQ Section */}
+      <section className="faq-section concrete-texture">
         <ScrollReveal>
           <div className="container">
-            <div className="about-grid">
-              <div className="about-content">
-                <h2>Trusted by Okotoks & The Foothills</h2>
-                <p className="about-intro">
-                  Diamond Concrete Sealing is a family‑run business serving Okotoks and the Foothills for over 10 years. We've built our reputation on careful surface preparation, superior chemistry, and clean workmanship—delivering finishes that look great on day one and still perform seasons later.
-                </p>
-                <div className="features-list">
-                  <div className="feature-item">✓ 10+ years of hands‑on experience</div>
-                  <div className="feature-item">✓ Family‑based values & clear communication</div>
-                  <div className="feature-item">✓ Fully insured & safety‑first job sites</div>
-                  <div className="feature-item">✓ Transparent quotes & punctual timing</div>
-                  <div className="feature-item">✓ Professional-grade equipment</div>
-                  <div className="feature-item">✓ Respectful cleanup & detailed edges</div>
-                </div>
-                <p className="about-outro">
-                  We're proud of our referral rate and repeat clients. References from recent Okotoks and Foothills projects are available on request.
-                </p>
-              </div>
-              <div className="about-image">
-                <Image alt="Professional concrete sealing" src="/images/image_10.jpg" width={600} height={400} className="about-img" blurDataURL={placeholders['image_10']} placeholder={placeholders['image_10'] ? 'blur' : undefined} />
-              </div>
+            <div className="section-header">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <div className="container">
+            <FAQ />
+          </div>
+        </ScrollReveal>
+      </section>
+
+      {/* CTA Section */}
+      <section id="contact" className="cta-section">
+        <ScrollReveal>
+          <div className="container">
+            <div className="cta-content">
+              <h2>Need concrete sealing service?</h2>
+              <a href="#contact-form" className="btn-primary-large">Request a quote</a>
+              <p className="cta-subtitle">Unleash the full potential of your concrete surfaces.</p>
             </div>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* Contact/Quote Section */}
-      <section id="contact" className="contact-section">
+      {/* Contact Form Section */}
+      <section id="contact-form" className="contact-section">
         <ScrollReveal>
           <div className="container">
             <div className="contact-wrapper">
