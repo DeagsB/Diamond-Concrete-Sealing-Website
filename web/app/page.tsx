@@ -25,12 +25,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero-section concrete-overlay">
+      <section className="hero-section concrete-overlay bg-blueprint">
         <div className="hero-gradient"></div>
         <div className="container hero-content-new">
           <div className="hero-text-new">
+            <div className="tech-label">EST. 2024 • INDUSTRIAL GRADE PROTECTION</div>
             <div className="hero-badge">From 500+ Projects</div>
-            <h1 className="hero-title-new">
+            <h1 className="hero-title-new uppercase">
               Crafting durable protection, <span className="highlight">sealing concrete excellence</span>
             </h1>
             <p className="hero-description-new">
@@ -98,7 +99,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>We believe in turning your concrete surfaces into protected investments</h2>
+              <h2 className="uppercase">We believe in turning your concrete surfaces into protected investments</h2>
               <p>Whether you have a sprawling driveway or a cozy patio, our team of experienced concrete sealing professionals is dedicated to bringing your protection dreams to life.</p>
             </div>
           </div>
@@ -146,7 +147,7 @@ export default function Home() {
         <section className="availability-section">
           <div className="container">
             <div className="availability-content">
-              <h2>Our team is available Monday to Friday</h2>
+              <h2 className="uppercase">Our team is available Monday to Friday</h2>
               <div className="availability-info">
                 <a href="tel:+15878306736" className="availability-phone">(587) 830-6736</a>
                 <p className="availability-hours">From 9am to 5pm</p>
@@ -161,7 +162,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>Our services</h2>
+              <h2 className="uppercase">Our services</h2>
               <p>Our team combines expertise with creativity to transform concrete surfaces into protected, beautiful spaces that enhance the value of any property.</p>
             </div>
           </div>
@@ -318,7 +319,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>Our recent works</h2>
+              <h2 className="uppercase">Our recent works</h2>
               <p>We take a personalized approach to every project, ensuring that each concrete sealing job we complete is a reflection of our client's unique vision and protection needs.</p>
             </div>
           </div>
@@ -344,7 +345,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>Trusted by 500+ customers</h2>
+              <h2 className="uppercase">Trusted by 500+ customers</h2>
               <div className="testimonials-rating">
                 <div className="rating-score">4.9</div>
                 <p className="rating-text">From 500+ ratings</p>
@@ -372,7 +373,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
-              <h2>Frequently Asked Questions</h2>
+              <h2 className="uppercase">Frequently Asked Questions</h2>
             </div>
           </div>
         </ScrollReveal>
@@ -388,7 +389,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="container">
             <div className="cta-content">
-              <h2>Need concrete sealing service?</h2>
+              <h2 className="uppercase">Need concrete sealing service?</h2>
               <a href="#contact-form" className="btn-primary-large">Request a quote</a>
               <p className="cta-subtitle">Unleash the full potential of your concrete surfaces.</p>
             </div>
@@ -402,7 +403,7 @@ export default function Home() {
           <div className="container">
             <div className="contact-wrapper">
               <div className="contact-header">
-                <h2>Get Your Free Quote Today</h2>
+                <h2 className="uppercase">Get Your Free Quote Today</h2>
                 <p>Professional concrete sealing that protects your investment for years to come</p>
               </div>
             </div>
