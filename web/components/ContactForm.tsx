@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import { CheckIcon, WarningIcon } from './Icons'
 
 export default function ContactForm() {
   const [status, setStatus] = React.useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' })
@@ -97,14 +98,14 @@ export default function ContactForm() {
 
         {status.type === 'success' && (
           <div className="form-status success" role="status">
-            <span className="status-icon">✓</span>
+            <span className="status-icon"><CheckIcon /></span>
             <span>{status.message}</span>
           </div>
         )}
 
         {status.type === 'error' && (
           <div className="form-status error" role="alert">
-            <span className="status-icon">⚠</span>
+            <span className="status-icon"><WarningIcon /></span>
             <span>{status.message}</span>
           </div>
         )}

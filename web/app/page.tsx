@@ -9,6 +9,7 @@ import Counter from '../components/Counter'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
 import FAQ from '../components/FAQ'
 import Testimonials from '../components/Testimonials'
+import { PhoneIcon, CheckIcon } from '../components/Icons'
 
 const galleryImages = [
   { src: '/images/image_2.jpg', alt: 'Sealed driveway', width: 800, height: 600 },
@@ -63,17 +64,28 @@ export default function Home() {
               <h3>Book a call with our experts</h3>
               <div className="book-call-content">
                 <div className="book-call-info">
-                  <div className="expert-card">
-                    <div className="expert-avatar">DC</div>
-                    <div className="expert-details">
-                      <h4>Diamond Concrete Team</h4>
-                      <p>We take the time to understand your unique needs and preferences to ensure that your concrete sealing project reflects your vision and protects your investment.</p>
-                    </div>
+                <div className="expert-card">
+                  <div className="expert-avatar-wrapper">
+                    <Image 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
+                      alt="Diamond Concrete Team" 
+                      width={200} 
+                      height={200}
+                      className="expert-avatar-image"
+                    />
                   </div>
+                  <div className="expert-details">
+                    <h4>Diamond Concrete Team</h4>
+                    <p>We take the time to understand your unique needs and preferences to ensure that your concrete sealing project reflects your vision and protects your investment.</p>
+                  </div>
+                </div>
                 </div>
                 <div className="book-call-cta">
                   <a href="#contact" className="btn-primary-large">Request a Quote</a>
-                  <a href="tel:+15878306736" className="book-call-phone">📞 (587) 830-6736</a>
+                  <a href="tel:+15878306736" className="book-call-phone">
+                    <PhoneIcon />
+                    <span>(587) 830-6736</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -95,10 +107,28 @@ export default function Home() {
           <div className="container">
             <div className="beliefs-grid">
               <div className="belief-card stagger-item">
+                <div className="belief-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop" 
+                    alt="Professional concrete sealing" 
+                    width={600} 
+                    height={400}
+                    className="belief-image"
+                  />
+                </div>
                 <h4>Professional-grade sealing practices</h4>
                 <p>We use only industrial-strength sealers with 25-30% solids content for maximum protection and durability.</p>
               </div>
               <div className="belief-card stagger-item">
+                <div className="belief-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=400&fit=crop" 
+                    alt="Personalized concrete service" 
+                    width={600} 
+                    height={400}
+                    className="belief-image"
+                  />
+                </div>
                 <h4>Personalized service for your needs</h4>
                 <p>Every project is tailored to your specific requirements, ensuring results that exceed expectations.</p>
               </div>
@@ -136,55 +166,127 @@ export default function Home() {
           <div className="container">
             <div className="services-grid-new">
               <div className="service-card-new">
-                <div className="service-icon">➕</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop" 
+                    alt="Exposed aggregate concrete" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Exposed Aggregate Sealing</h3>
                 <p>Deep protection that highlights the natural stone while resisting water and salts.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">📐</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop" 
+                    alt="Stamped concrete pattern" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Stamped Concrete Sealing</h3>
                 <p>Enhances colour and pattern; optional high-gloss for a showpiece finish.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">🧹</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" 
+                    alt="Broom finish concrete" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Broom Concrete Sealing</h3>
                 <p>Clean, uniform look with tuned slip-resistance for walkways and steps.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">🛣️</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
+                    alt="Asphalt driveway" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Asphalt Sealing</h3>
                 <p>Protects and refreshes asphalt drives and small lots.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">💧</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400&h=300&fit=crop" 
+                    alt="Pressure washing equipment" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Pressure Washing & Stain Removal</h3>
                 <p>Degreasing and surface cleaning to prep properly and restore appearance.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">🎨</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop" 
+                    alt="Concrete repair work" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Concrete Staining & Crack Repair</h3>
                 <p>Colour options and discreet repairs for a seamless finish.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">🔒</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" 
+                    alt="Anti-slip surface" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Anti-Slip Additives</h3>
                 <p>Traction options for steps and high-traffic areas.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">⚗️</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop" 
+                    alt="Acid washing process" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Acid Washing</h3>
                 <p>Controlled etch to open pores and remove mineral deposits as needed.</p>
               </div>
               
               <div className="service-card-new">
-                <div className="service-icon">🔧</div>
+                <div className="service-image-wrapper">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
+                    alt="Asphalt repair work" 
+                    width={400} 
+                    height={300}
+                    className="service-image"
+                  />
+                </div>
                 <h3>Asphalt Repairs</h3>
                 <p>Small patch and edge repairs to clean up problem areas.</p>
               </div>
@@ -299,18 +401,21 @@ export default function Home() {
                   <div className="info-card">
                     <h3>Why Choose Diamond?</h3>
                     <ul className="info-list">
-                      <li>✅ Free estimates within 24 hours</li>
-                      <li>⏱️ Same-day or next-day service available</li>
-                      <li>🛡️ Full workmanship warranty included</li>
-                      <li>💰 Competitive pricing, no hidden fees</li>
-                      <li>🎯 Local experts you can trust</li>
+                      <li><CheckIcon /> Free estimates within 24 hours</li>
+                      <li><CheckIcon /> Same-day or next-day service available</li>
+                      <li><CheckIcon /> Full workmanship warranty included</li>
+                      <li><CheckIcon /> Competitive pricing, no hidden fees</li>
+                      <li><CheckIcon /> Local experts you can trust</li>
                     </ul>
                   </div>
                   <div className="info-card">
                     <h3>Contact Info</h3>
                     <p className="info-company">Diamond Concrete Sealing</p>
                     <p className="info-location">Okotoks, Alberta</p>
-                    <a className="btn-primary" href="tel:+15878306736">📞 Call 587‑830‑6736</a>
+                    <a className="btn-primary" href="tel:+15878306736">
+                      <PhoneIcon />
+                      <span>Call 587‑830‑6736</span>
+                    </a>
                     <p className="info-response">We respond to requests within 24 hours</p>
                   </div>
                 </div>
