@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-slate-900 antialiased">
+      <body className="bg-white text-slate-900 antialiased concrete-texture">
         <a href="#main" className="skip-link">Skip to main content</a>
         <header className="site-header">
           <div className="header-container">

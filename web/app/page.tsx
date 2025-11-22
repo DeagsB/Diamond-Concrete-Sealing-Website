@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section with Strong CTA */}
-      <section className="hero-section">
+      <section className="hero-section concrete-overlay">
         <div className="hero-gradient"></div>
         <div className="container hero-content">
           <div className="hero-text slide-in-left">
@@ -100,7 +100,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* Benefits Section */}
-      <section id="why" className="benefits-section">
+      <section id="why" className="benefits-section concrete-texture">
         <ScrollReveal>
           <div className="container">
           <div className="section-header">
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="services-section-new">
+      <section id="services" className="services-section-new concrete-texture">
         <ScrollReveal>
           <div className="container">
             <h2>Our Services</h2>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="gallery-section">
+      <section id="gallery" className="gallery-section concrete-texture">
         <ScrollReveal>
           <div className="container">
             <div className="section-header">
@@ -240,7 +240,7 @@ export default function Home() {
       )}
 
       {/* About Section */}
-      <section id="about" className="about-section">
+      <section id="about" className="about-section concrete-texture">
         <ScrollReveal>
           <div className="container">
             <div className="about-grid">
