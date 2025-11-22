@@ -29,7 +29,6 @@ export default function Home() {
         <div className="hero-gradient"></div>
         <div className="container hero-content-new">
           <div className="hero-text-new">
-            <div className="tech-label">EST. 2024 • INDUSTRIAL GRADE PROTECTION</div>
             <div className="hero-badge">From 500+ Projects</div>
             <h1 className="hero-title-new uppercase">
               Crafting durable protection, <span className="highlight">sealing concrete excellence</span>
