@@ -67,8 +67,8 @@ export default function Home() {
                 <div className="expert-card">
                   <div className="expert-avatar-wrapper">
                     <Image 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
-                      alt="Diamond Concrete Team" 
+                      src="https://images.unsplash.com/photo-1504307651254-35680f6df652?w=200&h=200&fit=crop&crop=face" 
+                      alt="Diamond Concrete Team professional" 
                       width={200} 
                       height={200}
                       className="expert-avatar-image"
@@ -109,11 +109,13 @@ export default function Home() {
               <div className="belief-card stagger-item">
                 <div className="belief-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop" 
-                    alt="Professional concrete sealing" 
+                    src="/images/image_7.jpg" 
+                    alt="Professional-grade concrete sealer application" 
                     width={600} 
                     height={400}
                     className="belief-image"
+                    blurDataURL={placeholders['image_7']}
+                    placeholder={placeholders['image_7'] ? 'blur' : undefined}
                   />
                 </div>
                 <h4>Professional-grade sealing practices</h4>
@@ -122,11 +124,13 @@ export default function Home() {
               <div className="belief-card stagger-item">
                 <div className="belief-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=400&fit=crop" 
-                    alt="Personalized concrete service" 
+                    src="/images/image_2.jpg" 
+                    alt="Custom concrete sealing project" 
                     width={600} 
                     height={400}
                     className="belief-image"
+                    blurDataURL={placeholders['image_2']}
+                    placeholder={placeholders['image_2'] ? 'blur' : undefined}
                   />
                 </div>
                 <h4>Personalized service for your needs</h4>
@@ -168,11 +172,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop" 
-                    alt="Exposed aggregate concrete" 
+                    src="/images/image_2.jpg" 
+                    alt="Exposed aggregate concrete sealing" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_2']}
+                    placeholder={placeholders['image_2'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Exposed Aggregate Sealing</h3>
@@ -182,11 +188,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop" 
-                    alt="Stamped concrete pattern" 
+                    src="/images/image_4.jpg" 
+                    alt="Stamped concrete sealing with pattern" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_4']}
+                    placeholder={placeholders['image_4'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Stamped Concrete Sealing</h3>
@@ -196,11 +204,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" 
-                    alt="Broom finish concrete" 
+                    src="/images/image_10.jpg" 
+                    alt="Broom finish concrete sealing" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_10']}
+                    placeholder={placeholders['image_10'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Broom Concrete Sealing</h3>
@@ -210,8 +220,8 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
-                    alt="Asphalt driveway" 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&q=80" 
+                    alt="Asphalt driveway sealing" 
                     width={400} 
                     height={300}
                     className="service-image"
@@ -224,11 +234,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400&h=300&fit=crop" 
-                    alt="Pressure washing equipment" 
+                    src="/images/image_9.jpg" 
+                    alt="Pressure washing concrete surface preparation" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_9']}
+                    placeholder={placeholders['image_9'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Pressure Washing & Stain Removal</h3>
@@ -238,11 +250,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop" 
-                    alt="Concrete repair work" 
+                    src="/images/image_13.jpg" 
+                    alt="Concrete staining and crack repair" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_13']}
+                    placeholder={placeholders['image_13'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Concrete Staining & Crack Repair</h3>
@@ -252,11 +266,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" 
-                    alt="Anti-slip surface" 
+                    src="/images/image_7.jpg" 
+                    alt="Anti-slip concrete surface application" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_7']}
+                    placeholder={placeholders['image_7'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Anti-Slip Additives</h3>
@@ -266,11 +282,13 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop" 
-                    alt="Acid washing process" 
+                    src="/images/image_9.jpg" 
+                    alt="Acid washing concrete surface" 
                     width={400} 
                     height={300}
                     className="service-image"
+                    blurDataURL={placeholders['image_9']}
+                    placeholder={placeholders['image_9'] ? 'blur' : undefined}
                   />
                 </div>
                 <h3>Acid Washing</h3>
@@ -280,8 +298,8 @@ export default function Home() {
               <div className="service-card-new">
                 <div className="service-image-wrapper">
                   <Image 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
-                    alt="Asphalt repair work" 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&q=80" 
+                    alt="Asphalt repair and patching" 
                     width={400} 
                     height={300}
                     className="service-image"
